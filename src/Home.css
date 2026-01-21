@@ -1,0 +1,90 @@
+.logo.map {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+  animation: logoFloat 6s ease-in-out infinite;
+  border-radius: 50%;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 2px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  padding: 15px;
+}
+
+@keyframes logoFloat {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.start-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(79, 195, 247, 0.14), transparent 42%),
+    radial-gradient(circle at 82% 78%, rgba(41, 182, 246, 0.12), transparent 45%),
+    linear-gradient(135deg,
+      #1E3C4F 0%,
+      #244B5E 45%,
+      #18384A 100%);
+}
+
+.content {
+  text-align: center;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.content h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #E3F2FD;
+  line-height: 1.2;
+}
+
+.content p {
+  color: #B3E5FC;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #42A5F5 0%, #1E88E5 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+}
+
+.start-button:hover {
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    0 0 25px rgba(66, 165, 245, 0.5);
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 2rem 1rem;
+    max-width: 320px;
+  }
+
+  .start-button {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}

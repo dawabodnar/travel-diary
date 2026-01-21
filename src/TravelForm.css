@@ -1,0 +1,352 @@
+.travel-form-wrapper {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(79, 195, 247, 0.14), transparent 42%),
+    radial-gradient(circle at 82% 78%, rgba(41, 182, 246, 0.12), transparent 45%),
+    linear-gradient(135deg, #1E3C4F 0%, #244B5E 45%, #18384A 100%);
+  padding: 10px 0px;
+}
+
+.travel-form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.travel-form-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 32px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.travel-form-header .logo.plane {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -26px;
+}
+
+.travel-form-header h1 {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #E3F2FD, #B3E5FC);
+  background-clip: text;
+}
+
+.travel-form-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 400;
+  color: #B3E5FC;
+}
+
+.travel-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 45px;
+  border-radius: 32px;
+  margin-bottom: 10px;
+}
+
+.travel-form h2 {
+  font-size: 1.8rem;
+  color: #1E3C4F;
+  margin-bottom: 12px;
+  margin-top: -12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.travel-form h2 .logo.pin {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0);
+}
+
+.travel-form label {
+  display: block;
+  font-weight: 600;
+  color: #2D3748;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.travel-form input {
+  width: 98%;
+  padding: 14px 16px;
+  margin-bottom: 5px;
+  border: 2px solid rgba(30, 60, 79, 0.15);
+  border-radius: 16px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #2d3748;
+}
+
+.travel-form-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px;
+  background: linear-gradient(135deg, #42A5F5 0%, #1E88E5 100%);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: block;
+  margin: 10px auto -12px;
+}
+
+.travel-form-button:hover {
+  box-shadow:
+    0 12px 35px rgba(66, 165, 245, 0.45),
+    0 0 25px rgba(66, 165, 245, 0.3);
+}
+
+.travel-list {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 45px;
+  border-radius: 32px;
+  margin-bottom: 10px;
+}
+
+.travel-list h2 {
+  color: #1E3C4F;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  margin-top: -12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.travel-list h2 .logo.calendar {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0 30px 0;
+  align-items: flex-end;
+}
+
+.filters>div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 140px;
+}
+
+.filters label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #2D3748;
+}
+
+.filters select,
+.filters input[type="text"] {
+  padding: 10px 14px;
+  border: 2px solid rgba(30, 60, 79, 0.15);
+  border-radius: 12px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #2D3748;
+}
+
+.button-clear-filters {
+  background: linear-gradient(135deg, rgba(30, 60, 79, 0.08), rgba(30, 60, 79, 0.12));
+  color: #1E3C4F;
+  border: 2px solid rgba(30, 60, 79, 0.15);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button-clear-filters:hover {
+  background: linear-gradient(135deg, #42A5F5, #1E88E5);
+  color: white;
+  border-color: #42A5F5;
+}
+
+.list-empty {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.list-empty .logo.aeroplane {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  opacity: 0.25;
+}
+
+.list-empty p {
+  color: #4A5568;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.list-empty span {
+  color: #718096;
+  font-size: 1rem;
+}
+
+.travel-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.travel-list li {
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.05) 0%, rgba(30, 136, 229, 0.05) 100%);
+  padding: 0;
+  margin-bottom: 6px;
+  border-radius: 16px;
+  border: 2px solid rgba(66, 165, 245, 0.15);
+  overflow: hidden;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.travel-country {
+  margin-bottom: 8px;
+}
+
+.travel-country strong {
+  color: #1E88E5;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.travel-city {
+  color: #2D3748;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.travel-country,
+.travel-city {
+  display: inline;
+}
+
+.travel-country strong::after {
+  content: ", ";
+}
+
+.travel-dates {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.delete-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid transparent;
+  padding: 4px 6px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+.list-item:hover .delete-button {
+  opacity: 1;
+}
+
+.delete-button:hover {
+  background: rgba(66, 165, 245, 0.15);
+  border-color: rgba(66, 165, 245, 0.3);
+}
+
+.travel-actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (hover: none) {
+  .delete-button {
+    opacity: 1;
+    background: rgba(66, 165, 245, 0.15);
+    border-color: rgba(66, 165, 245, 0.3);
+  }
+
+  .travel-actions {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .travel-form,
+  .travel-list {
+    padding: 30px 20px;
+  }
+
+  .travel-form-header {
+    padding: 30px 20px;
+  }
+
+  .travel-form-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filters>div {
+    min-width: 100%;
+  }
+
+  .button-clear-filters {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .travel-form-wrapper {
+    padding: 20px 12px;
+  }
+
+  .travel-form-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .travel-form-header .logo.plane {
+    width: 70px;
+    height: 70px;
+  }
+
+  .travel-form h2,
+  .travel-list h2 {
+    font-size: 1.4rem;
+  }
+
+  .travel-form-button {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
